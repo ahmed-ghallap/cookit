@@ -48,7 +48,7 @@ async function fetchRecipes(filter = "") {
 function displayRecipes(recipes) {
     recipesContainer.innerHTML = recipes.map(recipe => `
         <div class="col">
-            <a href="/product.html?id=${recipe.id}" target="_blank">
+            <a href="html/product.html?id=${recipe.id}" target="_blank">
                 <div class="card">
                     <div class="imgbx">
                         <img src="${recipe.image}" alt="${recipe.title}">
