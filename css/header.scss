@@ -1,0 +1,177 @@
+// بسم الله
+.bg-header {
+    background-color: var(--clr-400);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    padding-block: $gap*2 $gap/2;
+}
+
+body {
+    position: relative;
+     .nav-wrapper {
+        position: fixed;
+        top: 0;
+        width: 100vw !important;
+        z-index: 1;
+        padding-block: $gap/3  ;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        // filter: drop-shadow(0 4px 3px var(--clr-950-25));
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        background-color: var(--clr-400-75);
+        padding-inline: .7rem;
+    }
+}
+.nav-wrapper > nav {
+    background-color: var(--clr-950-75);
+    color: white;
+    border-radius: 7px;
+    font-weight: 500;
+
+    text-align: center;
+    width: fit-content;
+}
+
+
+
+header .product {
+    position: relative;
+    & > img {
+        border-radius: 20px;
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        filter: drop-shadow(0 4px 4px var(--clr-950-50));
+    }
+    .wrapper {
+        position: absolute;
+        bottom: $gap/3;
+        right: $gap/3;
+        width: 45px;
+        padding: 4px; 
+        border-radius: 8px;
+
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 3px solid var(--clr-100-25);
+        background-color: var(--clr-200-50);
+
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .wrapper details {
+        position: relative;
+        summary img {
+            width: 100%;
+            height: auto;
+        }
+        p {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 170%;
+            width: max-content;
+            padding: .4rem .8rem;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+
+details.cal {
+    $_: $cal1;
+    $__: $cal2;
+    p {
+        // background-image: linear-gradient(to right, $_, $__);
+        background-color: $_;
+    }
+    img {
+        filter: drop-shadow(0px 0px 3px $_) 
+                drop-shadow(0px -2px 0px $__)
+                drop-shadow(1px -2px 3px white);
+    }
+}
+details.pro {
+    $_: $pro1;
+    $__: $pro2;
+    p {
+        // background-image: linear-gradient(to right, $_, $__);
+        background-color: $_;
+    }
+    img {
+        filter: drop-shadow(0px 0px 0px  $_) 
+                drop-shadow(0px 0px 0px $__)
+                drop-shadow(2px 2px 3px $_)
+                drop-shadow(-2px -2px 3px $__)
+                drop-shadow(2px 4px 10px $_)
+                drop-shadow(-2px -4px 10px $__);
+    }
+}
+details.carb {
+    $_: $carb1;
+    $__: $carb2;
+    p {
+        // background-image: linear-gradient(to right, $_, $__);
+        background-color: $_;
+    }
+
+    img {
+        filter: drop-shadow(1px 1px 5px $__) 
+                drop-shadow(0px 0px 4px $_);
+    }
+}
+details.fat {
+    $_: $fat1;
+    $__: $fat2;
+    p {
+        // background-image: linear-gradient(to right, $_, $__);
+        background-color: $_;
+    }
+    img {
+        filter: drop-shadow(1px 1px 5px $__) 
+                drop-shadow(0px 0px 4px $_);
+    }
+}
+
+header .product-details {
+    text-align: center;
+    margin-top: $gap/3;
+    background-color: var(--clr-100);
+    border-radius: 10px;
+    padding: .3rem .8rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+header .product-details .price {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+    & > span {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: .4rem;
+    }
+    font-size: 1.3rem;
+    .old {
+        color: gray;
+        text-decoration: line-through;
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+    small {
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,110 @@
+// بسم الله 
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+// font-weight 500, 400
+
+@import 'const.scss';
+@import 'header.scss';
+@import 'main.scss';
+@import 'footer.scss';
+
+:root {
+  --clr-50: hsl(162, 90%, 97%); --clr-100: hsl(162, 90%, 92%); --clr-200: hsl(162, 90%, 85%); --clr-300: hsl(162, 90%, 75%); --clr-400: hsl(162, 90%, 63%); --clr-500: hsl(162, 90%, 55%); --clr-600: hsl(162, 90%, 50%); --clr-700: hsl(162, 90%, 40%); --clr-800: hsl(162, 90%, 36%); --clr-900: hsl(162, 90%, 29%); --clr-950: hsl(162, 90%, 15%); --clr-900-25: hsla(162, 90%, 29%, 0.25); --clr-950-25: hsla(162, 90%, 15%, 0.25); --clr-950-50: hsla(162, 90%, 15%, 0.5); --clr-950-75: hsla(162, 90%, 15%, 0.75); --clr-400-25: hsla(162, 90%, 63%, 0.25); --clr-400-50: hsla(162, 90%, 63%, 0.5); --clr-400-75: hsla(162, 90%, 63%, 0.75); --clr-200-25: hsla(162, 90%, 85%, 0.25); --clr-200-50: hsla(162, 90%, 85%, 0.5); --clr-200-75: hsla(162, 90%, 85%, 0.75); --clr-100-25: hsla(162, 90%, 92%, 0.25); --clr-100-50: hsla(162, 90%, 92%, 0.5); --clr-100-75: hsla(162, 90%, 92%, 0.75);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+  background-color: #FAFAFA;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.link {
+  border: none;
+  outline: none;
+  background: none;
+  color: var(--clr-600);
+  font-weight: 600;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* truncate to 3 lines */
+  -webkit-line-clamp: 3;
+}
+
+.scroll-slider {
+    display: flex;
+    flex-wrap:nowrap;
+    gap: .7rem;
+    overflow-x: scroll;
+    scrollbar-width: 0px;
+    mask-image: linear-gradient(to left, transparent ,  #000 10% 90%,  transparent );
+    -webkit-mask-image: linear-gradient(to left, transparent ,  #000 10% 90%,  transparent );
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.counter {
+  display: flex;
+  direction: ltr;
+  height: max-content;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: var(--clr-700);
+  border: 2px solid var(--clr-700);
+  .plus,
+  .minus,
+  .num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem 0.5rem;
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 100%;
+
+    &:hover,
+    &:active {
+      background-color: var(--clr-100);
+      color: var(--clr-700);
+    }
+  }
+
+  .num {
+    all: unset;
+    color: var(--clr-100);
+    text-align: center;
+    width: 100%;
+  }
+
+  .minus,
+  .num {
+    display: none;
+  }
+}
+

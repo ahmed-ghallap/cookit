@@ -1,0 +1,50 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    padding-block: $gap/3;
+    background-color: var(--clr-950-75);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+footer > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: $gap/2;
+}
+footer > nav {
+    .counter {
+        // padding: $gap/4 $gap/1;
+        width: 60%;
+        height: $gap;
+        color: white;
+        border-radius: 10px;
+    }
+    span {
+        background-color: white;
+        padding: $gap/3;
+        border-radius: 10px;
+    }
+    span > .fa-cart-shopping {
+        position: relative;
+        &::after {
+            content: attr(data-cart-items);
+            background-color: red;
+            color: white;
+            font-size: x-small;
+            padding: 0 5px;
+            border-radius: 10px;
+            aspect-ratio: 1;
+
+            position: absolute;
+            bottom: 240%;
+            left: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

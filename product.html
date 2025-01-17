@@ -1,0 +1,225 @@
+<!-- بسم الله -->
+<!DOCTYPE html>
+<html lang="en/ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookit</title>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- 
+    variables you need to know about
+       - data-rating
+            number of starts in testmonials "comment sectoin "
+            <span data-rating="1" class="stars">
+    
+-->
+
+<body>
+    <div class=" nav-wrapper ">
+        <nav class="container">
+            <!-- link to main menu site -->
+            <a href="/index.html">
+                Cook it 
+            </a>
+        </nav>
+    </div>
+    <div class="bg-header">
+        <header class="container">
+            <div class="product">
+                <img src="./media/product-imgs/food1.jpg" alt="image of the 'description of the product'product" srcset="" class="product">
+                <div class="wrapper">
+                    <details  class="carb">
+                        <summary><img src="./media/icons/carb.png" alt="" srcset=""></summary> 
+                        <p>100000 carb</p>
+                    </details>
+                    <details class="pro">
+                        <summary><img src="./media/icons/pro.png" alt="" srcset=""></summary> 
+                        <p>100 pro</p>
+                    </details>
+                    <details class="fat">
+                        <summary><img src="./media/icons/fat.png" alt="" srcset=""></summary> 
+                        <p>100 fat</p>
+                    </details>
+                    <details open class="cal">
+                        <summary><img src="./media/icons/cal.png" alt="" srcset=""></summary> 
+                        <p>100 kcal</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <span class="name">
+                    توست بالجبنة
+                    توست بالجبنة
+                    توست بالجبنة
+                    توست بالجبنة
+                    توست بالجبنة
+                </span>
+           </div>
+        </header>
+    </div>
+
+    <main>
+        <section class="container" id="desc">
+            <h3>
+                وصف المنتج
+            </h3>
+            <p class="line-clamp-3">
+                يَحكونَ أَنَّ أُمَّةَ الأَرانِبِ قَد أَخَذَت مِنَ الثَرى بِجانِبِ
+                وَاِبتَهَجَت بِالوَطَنِ الكَريمِ وَمَوئِلِ العِيالِ وَالحَريمِ فَاِختارَهُ الفيلُ لَهُ طَريقا مُمَزِّقاً أَصحابَنا تَمزيقا وَكانَ فيهِم أَرنَبٌ لَبيبُ أَذهَبَ جُلَّ صوفِهِ 
+                يَحكونَ أَنَّ أُمَّةَ الأَرانِبِ قَد أَخَذَت مِنَ الثَرى بِجانِبِ
+                وَاِبتَهَجَت بِالوَطَنِ الكَريمِ وَمَوئِلِ العِيالِ وَالحَريمِ فَاِختارَهُ الفيلُ لَهُ طَريقا مُمَزِّقاً أَصحابَنا تَمزيقا وَكانَ فيهِم أَرنَبٌ لَبيبُ أَذهَبَ جُلَّ صوفِهِ 
+                يَحكونَ أَنَّ أُمَّةَ الأَرانِبِ قَد أَخَذَت مِنَ الثَرى بِجانِبِ
+                وَاِبتَهَجَت بِالوَطَنِ الكَريمِ وَمَوئِلِ العِيالِ وَالحَريمِ فَاِختارَهُ الفيلُ لَهُ طَريقا مُمَزِّقاً أَصحابَنا تَمزيقا وَكانَ فيهِم أَرنَبٌ لَبيبُ أَذهَبَ جُلَّ صوفِهِ 
+            </p>
+            <button class="link show-less">
+                قراءة المزيد
+            </button>
+        </section>
+        <section  id="food-info">
+            <div class='container'>
+                <span>
+                    <span class="digit">25 kcal</span>
+                    <!-- <img  src="./media/icons/fire.svg" alt=""> -->
+                    <i class="fa-solid fa-fire fa-xl"></i>
+                    <!-- <object type="image/svg+xml" data="/media/icons/fire.svg" ></object> -->
+                </span>
+                <span>
+                    <span class="digit">5-10 min</span>
+                    <!-- <img src="./media/icons/clock.svg" alt=""> -->
+                    <i class="fa-regular fa-clock fa-xl"></i>
+                </span>
+                <span>
+                    <span class="digit">4.5</span>
+                    <!-- <img src="./media/icons/star.svg" alt=""> -->
+                    <i class="fa-regular fa-star fa-xl"></i>
+                </span>
+            </div>
+        </section>
+        <section class="container"  id="ingradiants">
+            <h3>
+                المكونات
+            </h3>
+            <div class="scroll-slider">
+                <span>خبز التوست</span> 
+                <span>زبدة</span> 
+                <span>قطع الدجاج المحمرة</span> 
+                <span>ماء شرب</span> 
+                <span>ورق لورة</span> 
+                <span>ورورق لورةورق لورةورق لورةق لورة</span> 
+            </div>
+        </section>
+        <section class="container" id="similar-products">
+            <h3>
+                منتجات متشابهة
+            </h3>
+            <div class="scroll-slider">
+                <span>
+                    <img src="./media/product-imgs/food1.jpg" alt="" srcset="">
+                    <h4>منتج مماثل</h4>
+                    <h4>100 ج.م</h4>
+                </span>
+                <span>
+                    <img src="./media/product-imgs/food2.jpg" alt="" srcset="">
+                    <h4>منتج مماثل</h4>
+                    <h4>100 ج.م</h4>
+                </span>
+                <span>
+                    <img src="./media/product-imgs/food3.jpg" alt="" srcset="">
+                    <h4>منتج مماثل</h4>
+                    <h4>100 ج.م</h4>
+                </span>
+                <span>
+                    <img src="./media/product-imgs/food9.png" alt="" srcset="">
+                    <h4>منتج مماثل</h4>
+                    <h4>100 ج.م</h4>
+                </span>
+                <span>
+                    <img src="./media/product-imgs/food5.jpg" alt="" srcset="">
+                    <h4>منتج مماثل</h4>
+                    <h4>100 ج.م</h4>
+                </span>
+                <span>
+                    <img src="./media/product-imgs/food6.jpg" alt="" srcset="">
+                    <h4>منتج مماثل</h4>
+                    <h4>100 ج.م</h4>
+                </span>
+            </div>
+        </section>
+
+        <section class="container" id="comments">
+            <h3>آراء العملاء</h3>
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                      <div class="comment">
+                          <div class="person">
+                              <img src="./media/people-imgs/face1.jpg" alt="" class="avatar">
+                              <span class="name">
+                                  حلمي محمد
+                              </span>
+                          </div>
+                          <p>
+                              منتج رائع جدا جزاك الله خيرا 💜
+                          </p>
+                          <span data-rating="4" class="stars">
+                              <i class="fa-solid fa-star fa-xl"></i>
+                              <i class="fa-regular fa-star fa-xl"></i>
+                              <i class="fa-regular fa-star fa-xl"></i>
+                              <i class="fa-regular fa-star fa-xl"></i>
+                              <i class="fa-regular fa-star fa-xl"></i>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="carousel-item ">
+                      <div class="comment">
+                          <div class="person">
+                              <img src="./media/people-imgs/face2.jpg" alt="" class="avatar">
+                              <span class="name">
+                                عبد الله الرفاعي
+                              </span>
+                          </div>
+                          <p class="line-clamp-3">
+                              منتج رائع جدا جزاك الله خيرا 💜
+                              منتج رائع جدا جزاك الله خيرا 💜
+                              منتج رائع جدا جزاك الله خيرا 💜
+                              منتج رائع جدا جزاك الله خيرا 💜
+                              منتج رائع جدا جزاك الله خيرا 💜
+                              منتج رائع جدا جزاك الله خيرا 💜
+                          </p>
+                          <span data-rating="3" class="stars">
+                              <i class="fa-solid fa-star fa-xl"></i>
+                              <i class="fa-regular fa-star fa-xl"></i>
+                              <i class="fa-regular fa-star fa-xl"></i>
+                              <i class="fa-regular fa-star fa-xl"></i>
+                              <i class="fa-regular fa-star fa-xl"></i>
+                          </span>
+                      </div>
+                  </div>
+
+                </div>
+              </div>
+              
+        </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/color.js"></script> -->
+    <script src="./js/text.js"></script>
+    <script src="./js/counter.js"></script>
+    <script src="./js/stars.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
